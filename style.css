@@ -22,6 +22,12 @@ header {
     z-index: 100;
 }
 
+header .logo {
+    height: 60px;
+    width: auto;
+    display: block;
+}
+
 nav ul {
     list-style-type: none;
     padding: 0;
@@ -85,7 +91,6 @@ button:hover {
 footer {
     text-align: center;
     padding: 1rem;
-    /*margin-top: 1rem;*/
     background-color: #eeeeee;
     margin-top: auto
 }
