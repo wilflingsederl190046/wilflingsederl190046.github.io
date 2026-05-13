@@ -5,6 +5,9 @@ body {
     background-color: #f9f9f9;
     margin: 0;
     padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 header {
@@ -14,6 +17,9 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
 }
 
 nav ul {
@@ -37,6 +43,9 @@ main {
     max-width: 800px;
     margin: 2rem auto;
     padding: 0 1rem;
+    width: 100%;
+    box-sizing: border-box;
+    flex: 1;
 }
 
 .hero {
@@ -75,12 +84,17 @@ button:hover {
 
 footer {
     text-align: center;
-    padding: 2rem;
-    margin-top: 3rem;
+    padding: 1rem;
+    /*margin-top: 1rem;*/
     background-color: #eeeeee;
+    margin-top: auto
 }
 
 footer nav a {
     color: #0056b3;
     margin: 0 0.5rem;
+}
+
+footer nav ul {
+    justify-content: center;
 }
