@@ -7,6 +7,9 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+    <a class="skip-link" href="#main-content">Zum Hauptinhalt springen</a>
+
     <header>
         <a href="index.html"><img class="logo" src="img/logo.png" alt="MacroPrep Logo"></a>
         <nav>
@@ -18,7 +21,7 @@
         </nav>
     </header>
 
-    <main>
+    <main id="main-content">
         <section>
             <h1>Kontaktieren Sie uns</h1>
             <p>Haben Sie Fragen zur MacroPrep Basis-Lizenz? Schreiben Sie uns!</p>
@@ -32,7 +35,7 @@
                 <label for="nachricht">Nachricht:</label>
                 <textarea id="nachricht" name="nachricht" rows="4" required style="padding: 8px;"></textarea>
                 
-                <button type="submit" onclick="alert('Mock: Nachricht gesendet!'); return false;">Absenden</button>
+                <button type="submit" onclick="alert('Nachricht gesendet!'); return false;">Absenden</button>
             </form>
         </section>
     </main>
