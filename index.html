@@ -7,6 +7,9 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- Skip Navigation wegen WCAG 2.4.1 -->
+    <a class="skip-link" href="#main-content">Zum Hauptinhalt springen</a>
+
     <header>
         <a href="index.html">
             <img class="logo" src="img/logo.png" alt="MacroPrep Logo">
@@ -43,14 +46,25 @@
             <div class="buy-section">
                 <h2>MacroPrep Basis-Lizenz</h2>
                 <p>Einmalverkauf: 14,99 €</p>
-                <button onclick="alert('Mock: Artikel zum Warenkorb hinzugefügt')">In den Warenkorb</button>
+                <button onclick="alert('Artikel zum Warenkorb hinzugefügt')">In den Warenkorb</button>
             </div>
         </section>
     </main>
 
-    <div style="position: fixed; bottom: 0; background: #333; color: white; width: 100%; padding: 10px; text-align: center; font-size: 0.8rem;">
-        Wir nutzen Cookies für die Web-Analyse und Funktionalität. <a href="datenschutz.html" style="color: #66b2ff;">Mehr erfahren</a>. 
-        <button style="margin-left: 10px; padding: 5px 10px; font-size: 0.8rem;">Akzeptieren</button>
+    <div id="cookie-banner" role="dialog" aria-modal="true" aria-labelledby="cookie-title" aria-describedby="cookie-desc">
+        <p>
+            <strong id="cookie-title">Wir verwenden Cookies.</strong>
+            <span id="cookie-desc">
+                Technisch notwendige Cookies sind für den Betrieb der Website erforderlich und werden ohne Einwilligung gesetzt.
+                Optionale Cookies (Analyse, Google Fonts) setzen wir nur mit Ihrer Einwilligung.
+                <a href="datenschutz.html" style="color: #aad4ff;">Mehr erfahren</a>
+            </span>
+        </p>
+        <div class="cookie-actions">
+            <button class="btn-reject" onclick="handleCookies(false)" aria-label="Nur notwendige Cookies akzeptieren">Ablehnen</button>
+            <button class="btn-accept" onclick="handleCookies(true)" aria-label="Alle Cookies akzeptieren">Alle akzeptieren</button>
+            <button class="btn-settings" onclick="alert('Mock: Cookie-Einstellungen öffnen')" aria-label="Cookie-Einstellungen anpassen">Einstellungen</button>
+        </div>
     </div>
 
     <footer>
@@ -63,5 +77,11 @@
             </ul>
         </nav>
     </footer>
+
+    <script>
+        function handleCookies(acceptAll) {
+            document.getElementById('cookie-banner').style.display = 'none';
+        }
+    </script>
 </body>
 </html>
