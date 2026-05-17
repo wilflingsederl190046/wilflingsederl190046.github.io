@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontakt - MacroPrep</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <a href="index.html"><img class="logo" src="img/logo.png" alt="MacroPrep Logo"></a>
+        <nav>
+            <ul>
+                <li><a href="index.html">Shop</a></li>
+                <li><a href="about.html">Über uns</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h1>Kontaktieren Sie uns</h1>
+            <p>Haben Sie Fragen zur MacroPrep Basis-Lizenz? Schreiben Sie uns!</p>
+            <form action="#" method="post" style="display: flex; flex-direction: column; gap: 10px; max-width: 400px;">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required style="padding: 8px;">
+                
+                <label for="email">E-Mail:</label>
+                <input type="email" id="email" name="email" required style="padding: 8px;">
+                
+                <label for="nachricht">Nachricht:</label>
+                <textarea id="nachricht" name="nachricht" rows="4" required style="padding: 8px;"></textarea>
+                
+                <button type="submit" onclick="alert('Mock: Nachricht gesendet!'); return false;">Absenden</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 PrepTech Solutions. Alle Rechte vorbehalten.</p>
+        <nav>
+            <ul>
+                <li><a href="lizenz.html">Lizenz</a></li>
+                <li><a href="datenschutz.html">Datenschutz</a></li>
+                <li><a href="impressum.html">Impressum</a></li>
+            </ul>
+        </nav>
+    </footer>
+</body>
+</html>
