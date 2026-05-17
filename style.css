@@ -197,8 +197,8 @@ button:hover {
     margin: 1rem 0;
 }
 .barrier-table th {
-    background-color: #7f7f7f;
-    color: #333;
+    background-color: #e7e7e7;
+    color: #000000;
     padding: 9px 10px;
     text-align: left;
 }
